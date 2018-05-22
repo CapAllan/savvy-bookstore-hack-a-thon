@@ -1,3 +1,6 @@
+var = postRequest = $.ajax( "https://api.savvycoders.com/books" );
+var = postRequest = $.ajax( "https://api.savvycoders.com/albums" );
+
 var books = [
     {
         "id": 1,
@@ -87,7 +90,7 @@ function createProductCard( product ){
 
     bookSellingPoints += "</ul>" + "</div>";
 
-    return openingTag + bookTitleVariable + bookAuthorVariable + bookImageVariable + bookPrice + bookSellingPoints + "</div>";
+    return openingTag + bookTitleVariable + bookAuthorVariable + bookImageVariable + bookPrice + bookSellingPoint s + "</div>";
 }
 
 document.querySelector( "#content" ).innerHTML += albums.map( createProductCard ).join( "" ) + books.map( createProductCard ).join( "" );
